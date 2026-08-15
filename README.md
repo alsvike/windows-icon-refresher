@@ -25,6 +25,7 @@
   <a href="#-quick-start">Quick start</a> •
   <a href="#-how-to-fix-blank-taskbar-icons-in-windows-11">Windows 11 fix</a> •
   <a href="#-troubleshooting">Troubleshooting</a> •
+  <a href="ROADMAP.md">Roadmap</a> •
   <a href="#-faq">FAQ</a>
 </p>
 
@@ -325,6 +326,7 @@ Yes. Windows Icon Refresher is intended for both Windows 11 and Windows 10.
 - 🪟 **[Fix Blank Taskbar Icons in Windows 11](docs/FIX-BLANK-TASKBAR-ICONS-WINDOWS-11.md)**
 - ♻️ **[Rebuild the Windows Icon Cache on Windows 11 and Windows 10](docs/REBUILD-WINDOWS-ICON-CACHE.md)**
 - 🧰 **[Troubleshooting Windows Icon Refresher](docs/TROUBLESHOOTING.md)**
+- 🗺 **[Planned Features & Development Roadmap](ROADMAP.md)**
 
 ---
 
@@ -335,6 +337,7 @@ windows-icon-refresher/
 ├── windows_icon_refresher.py
 ├── requirements.txt
 ├── README.md
+├── ROADMAP.md
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
@@ -370,16 +373,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## 🗺 Roadmap
 
-Possible future improvements include:
+The roadmap is organized by priority, from **P0 — Next** through **P3 — Future / Exploratory**, with planned work covering smarter diagnostics, one-click repair, shortcut inspection, packaging, accessibility, automation, and deeper Windows shell tooling.
 
-- Packaged Windows `.exe` releases
-- Automatic Windows theme detection
-- Light theme
-- Improved DPI scaling
-- More detailed Windows icon-cache diagnostics
-- Optional icon-cache backup
-- Additional shell repair tools
-- Localization
+➡️ **[View the full Windows Icon Refresher roadmap](ROADMAP.md)**
 
 Feature suggestions are welcome through GitHub Issues.
 
