@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Windows Icon Refresher">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173d58"/>
+      <stop offset="1" stop-color="#0c2232"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#0b1118"/>
+  <rect x="5" y="5" width="54" height="54" rx="12" fill="url(#g)" stroke="#2b607d"/>
+  <path d="M44.8 24.2a16 16 0 1 1-8.5-7.5" fill="none" stroke="#4cc2ff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M34.8 10.7l3.1 9.7 9.5-3.5" fill="none" stroke="#4cc2ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
