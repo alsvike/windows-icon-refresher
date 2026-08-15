@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alsvike.github.io/windows-icon-refresher/sitemap.xml
