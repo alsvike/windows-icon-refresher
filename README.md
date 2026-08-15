@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <img alt="Version 1.0" src="https://img.shields.io/badge/version-1.0-4CC2FF?style=for-the-badge">
-  <img alt="Windows 10 and Windows 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white">
-  <img alt="Python 3" src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge">
+  <a href="https://github.com/alsvike/windows-icon-refresher/releases/tag/v1.0"><img alt="Version 1.0" src="https://img.shields.io/badge/version-1.0-4CC2FF?style=for-the-badge"></a>
+  <a href="#-quick-start"><img alt="Windows 10 and Windows 11" src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?style=for-the-badge&logo=windows11&logoColor=white"></a>
+  <a href="https://www.python.org/downloads/"><img alt="Python 3" src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white"></a>
+  <a href="LICENSE.md"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-2EA44F?style=for-the-badge"></a>
 </p>
 
 <p align="center">
