@@ -1,44 +1,43 @@
-# Windows Icon Refresher
+# Windows Icon Refresher — Fix Blank or Broken Taskbar Icons on Windows 11 & 10
 
 <p align="center">
-  <img src="https://i.imgur.com/kYIJKVL.png" alt="Windows Icon Refresher - fix broken, blank, stale, or generic taskbar icons on Windows 10 and Windows 11" width="100%">
+  <img src="https://i.imgur.com/kYIJKVL.png" alt="Windows Icon Refresher GUI for fixing blank taskbar icons, generic app icons, and corrupted icon cache on Windows 11 and Windows 10" width="100%">
 </p>
 
 <p align="center">
-  <strong>Fix broken, blank, stale, generic, or incorrect taskbar and File Explorer icons on Windows 10 and Windows 11.</strong>
+  <strong>Fix blank, missing, generic, stale, or incorrect Windows taskbar and File Explorer icons without manually rebuilding the icon cache in Command Prompt.</strong>
 </p>
 
 <p align="center">
-  A lightweight Python desktop utility that refreshes the Windows icon cache, restarts Windows Explorer, and rebuilds corrupted icon-cache files without requiring manual Command Prompt repair steps.
+  Windows Icon Refresher is a lightweight open-source GUI for Windows 11 and Windows 10 that can refresh shell icons, restart Windows Explorer, and rebuild the current-user icon cache.
 </p>
 
 <p align="center">
-  <a href="#fix-broken-windows-taskbar-icons">What it fixes</a> •
+  <a href="#what-windows-icon-refresher-fixes">What it fixes</a> •
   <a href="#repair-modes">Repair modes</a> •
   <a href="#installation">Installation</a> •
-  <a href="#how-to-fix-a-broken-taskbar-icon">How to use</a> •
-  <a href="#windows-icon-cache-troubleshooting">Troubleshooting</a>
+  <a href="#how-to-fix-blank-taskbar-icons-in-windows-11">Windows 11 fix</a> •
+  <a href="#frequently-asked-questions">FAQ</a>
 </p>
 
 ---
 
-## Fix Broken Windows Taskbar Icons
+## What Windows Icon Refresher Fixes
 
-**Windows Icon Refresher** is an open-source Windows 10 and Windows 11 icon repair utility for users experiencing broken taskbar icons, blank application icons, generic white-file icons, stale shortcut icons, or incorrect File Explorer icons.
+**Windows Icon Refresher 1.0** is designed for common Windows icon-cache and shell problems, including:
 
-It is designed for common Windows icon-cache problems such as:
+- **Blank taskbar icons in Windows 11**
+- **App icons not appearing on the Windows taskbar**
+- **Generic app icons instead of the correct program icon**
+- **White or blank shortcut icons on the desktop, Start menu, or taskbar**
+- **Pinned taskbar icons showing the wrong icon after an app update**
+- **Stale application icons that do not refresh**
+- **File Explorer showing the wrong app or shortcut icon**
+- **Windows 10 or Windows 11 icon cache corruption**
+- **Shortcut icons that remain outdated after reinstalling an application**
+- **Correct icon inside the `.exe` but the wrong icon on the taskbar**
 
-- Windows 11 taskbar icon is blank or missing
-- Windows 10 taskbar icon shows the wrong application icon
-- Pinned taskbar app keeps showing an old icon after an update
-- File Explorer displays a generic white icon instead of the app icon
-- Desktop or Start menu shortcut icon does not refresh
-- Application icon is correct in the `.exe` but wrong on the taskbar
-- Windows icon cache appears corrupted
-- A shortcut still shows an old icon after reinstalling or updating an app
-- Taskbar icon remains stale after restarting the application
-
-Instead of manually deleting icon-cache databases or entering shell commands, Windows Icon Refresher provides a graphical interface with three levels of repair.
+Instead of manually stopping Explorer, finding icon-cache database files, deleting them, and restarting the shell, Windows Icon Refresher provides the repair workflow through a simple desktop interface.
 
 > **Current version:** `1.0`
 
@@ -46,40 +45,42 @@ Instead of manually deleting icon-cache databases or entering shell commands, Wi
 
 ## Why Use Windows Icon Refresher?
 
-Windows stores application and shell icons in cache files so it can display them quickly. Sometimes that cache becomes stale or corrupted, causing Windows to keep showing an old, blank, generic, or incorrect icon.
+Windows caches application, shortcut, taskbar, Start menu, and File Explorer icons so they can be displayed quickly. When those cached entries become stale or corrupted, Windows can continue showing an old, blank, generic, or incorrect icon.
 
-Windows Icon Refresher gives you a simple GUI for the most common Windows icon cache repair steps:
+Windows Icon Refresher provides a graphical interface for common Windows icon repair actions:
 
-- Refresh Windows shell icon associations
+- Refresh Windows shell icons and file associations
 - Refresh a specific `.exe`, `.lnk`, or `.ico`
 - Restart `explorer.exe`
-- Rebuild the current-user Windows icon cache
-- Let Windows recreate icon-cache database files automatically
+- Clear current-user icon-cache database files
+- Let Windows rebuild the icon cache automatically
+- View repair progress and activity logs
 
-The repair operations run locally on your PC.
+All repair operations run locally on your PC.
 
 ---
 
 ## Features
 
-- **Fix blank Windows taskbar icons**
-- **Fix generic white application icons**
+- **Fix blank Windows 11 taskbar icons**
+- **Fix generic Windows taskbar app icons**
+- **Fix app icons not appearing correctly on the taskbar**
 - **Refresh stale Windows 10 and Windows 11 icons**
 - **Repair incorrect File Explorer icons**
-- **Refresh pinned taskbar application icons**
+- **Refresh pinned taskbar icons after an application update**
 - **Quick Refresh** for a low-impact Windows shell icon refresh
 - **Restart Explorer** for the recommended taskbar icon repair
-- **Deep Rebuild** for stubborn or corrupted Windows icon-cache problems
+- **Deep Rebuild** to clear and rebuild a corrupted Windows icon cache
 - Target a specific `.exe`, `.lnk`, or `.ico` file
 - Restart Windows Explorer automatically
-- Rebuild the current user's icon-cache database files
+- Rebuild current-user icon-cache database files
 - Live repair progress and activity logging
 - Icon-cache diagnostics
 - Windows Explorer status display
 - Modern dark Windows-inspired interface
 - No telemetry or data collection
 - No account required
-- No internet connection required for icon repair operations
+- No internet connection required for repair operations
 
 ---
 
@@ -87,68 +88,57 @@ The repair operations run locally on your PC.
 
 ### Quick Refresh
 
-**Best for:** quickly refreshing a stale Windows icon without restarting Explorer.
+**Best for:** refreshing a stale Windows icon without restarting Explorer.
 
 Quick Refresh sends Windows shell icon and file-association refresh notifications while keeping Windows Explorer running.
 
-Try this when:
+Try it when:
 
 - One application icon suddenly looks wrong
 - A shortcut icon has not refreshed
 - You want to refresh Windows icons without restarting the taskbar
 
----
-
 ### Restart Explorer
 
-**Best for:** fixing most broken, blank, or stale taskbar icons on Windows 10 and Windows 11.
+**Best for:** fixing most blank, generic, missing, or stale taskbar icons on Windows 11 and Windows 10.
 
 This is the recommended first repair. Windows Icon Refresher refreshes the shell, restarts `explorer.exe`, and performs another icon refresh after Explorer starts again.
 
-Try this when:
+Try it when:
 
 - A Windows taskbar icon is blank
-- A pinned application shows the wrong icon
+- An app icon is not appearing correctly on the taskbar
+- A pinned application shows a generic icon
 - File Explorer displays an old application icon
 - Quick Refresh did not solve the problem
 
 > The taskbar and desktop may briefly disappear while Windows Explorer restarts.
 
----
-
 ### Deep Rebuild
 
-**Best for:** repairing a corrupted Windows icon cache when normal refreshes do not work.
+**Best for:** clearing and rebuilding a corrupted Windows icon cache when normal refreshes do not work.
 
 Deep Rebuild stops Windows Explorer, removes the current user's icon-cache database files, starts Explorer again, and asks Windows to rebuild the icon cache.
 
-Try this when:
+Try it when:
 
 - Windows 11 keeps showing generic taskbar icons
-- Multiple application icons are blank or incorrect
+- Multiple application shortcuts show blank icons
 - Restart Explorer does not repair the icon
 - The Windows icon cache appears corrupted
-- An old icon keeps returning after an application update
+- An old pinned icon keeps returning after an application update
 
 > **Warning:** Open File Explorer windows may close while Explorer is restarted.
 
 ---
 
-## Requirements
+## Installation
 
-- Windows 10 or Windows 11
+### Requirements
+
+- Windows 11 or Windows 10
 - Python 3
 - `ttkbootstrap`
-
-Install the required package with:
-
-```powershell
-py -m pip install ttkbootstrap
-```
-
----
-
-## Installation
 
 ### Clone from GitHub
 
@@ -189,22 +179,43 @@ py windows_icon_refresher.py
 
 ---
 
-## How to Fix a Broken Taskbar Icon
+## How to Fix Blank Taskbar Icons in Windows 11
 
-For most Windows taskbar icon problems:
+If a Windows 11 taskbar icon is blank, generic, missing, or showing the wrong application icon:
 
 1. Open **Windows Icon Refresher**.
-2. Leave **Restart Explorer** selected.
-3. Optionally select the affected application's `.exe`, `.lnk`, or `.ico` using **Browse**.
+2. Keep **Restart Explorer** selected.
+3. Optionally click **Browse** and select the affected application's `.exe`, `.lnk`, or `.ico`.
 4. Click **Fix taskbar icon**.
 5. Wait for Windows Explorer to restart.
-6. Check the affected taskbar or File Explorer icon.
-7. If the icon is still wrong, run **Deep Rebuild**.
-8. For a stubborn pinned icon, unpin the application and pin it again after the repair.
+6. Check the affected taskbar icon.
+7. If it is still wrong, run **Deep Rebuild**.
+8. If a pinned icon remains stale, unpin the app, launch it again, and repin it after the repair.
 
-### Fix One Specific Application Icon
+For a more detailed walkthrough, see **[Fix Blank Taskbar Icons in Windows 11](docs/FIX-BLANK-TASKBAR-ICONS-WINDOWS-11.md)**.
 
-If only one program has a broken icon, select its executable or shortcut before running the repair.
+---
+
+## How to Rebuild the Windows Icon Cache
+
+If restarting Explorer does not fix your icons, **Deep Rebuild** automates the current-user icon-cache rebuild process.
+
+It:
+
+1. Stops Windows Explorer.
+2. Locates the current user's Windows icon-cache database files.
+3. Removes those cache files.
+4. Starts Windows Explorer again.
+5. Requests a final shell icon refresh.
+6. Allows Windows to recreate the icon cache as needed.
+
+See **[How to Rebuild the Windows Icon Cache on Windows 11 and Windows 10](docs/REBUILD-WINDOWS-ICON-CACHE.md)** for more information.
+
+---
+
+## Fix One Specific Application Icon
+
+If only one program has the wrong taskbar or shortcut icon, select its executable or shortcut before running the repair.
 
 Supported target types:
 
@@ -212,33 +223,37 @@ Supported target types:
 - `.lnk` — Windows shortcut
 - `.ico` — icon file
 
-You can leave the target field empty to perform a global Windows icon refresh.
+Leave the target field empty to perform a global Windows icon refresh.
 
 ---
 
-## Windows Icon Cache Troubleshooting
+## Common Windows Icon Problems
 
-### Windows 11 taskbar icon is blank
+### Windows 11 taskbar icons are blank
 
-Run **Restart Explorer** first. If the blank taskbar icon remains, select the affected application's `.exe` or `.lnk` and run the repair again. Use **Deep Rebuild** if necessary.
+Start with **Restart Explorer**. If the blank taskbar icon remains, select the affected application's `.exe` or `.lnk` and run the repair again. Use **Deep Rebuild** for persistent icon-cache problems.
 
-### Windows taskbar shows a generic white icon
+### Taskbar icons show generic app icons
 
-A generic white icon can indicate a stale icon cache, a damaged shortcut, or an application that is not exposing the expected icon. Run **Deep Rebuild**, then recreate or repin the shortcut if the problem persists.
+Generic application icons can be caused by stale cache entries or shortcut problems. Run **Restart Explorer** first, then **Deep Rebuild** if the correct program icon does not return.
 
-### Pinned taskbar icon does not update after an app update
+### App icons are not appearing on the taskbar
+
+If the application is open but its expected icon is missing or replaced by a generic placeholder, target the application's executable and run **Restart Explorer**. A cache rebuild may be required if several apps are affected.
+
+### Pinned taskbar icon is not updating after an app update
 
 Unpin the app, run **Restart Explorer** or **Deep Rebuild**, launch the updated application, and pin it again.
 
-### File Explorer shows the wrong icon
+### File Explorer shows the wrong application icon
 
-Select the affected executable or shortcut and run **Restart Explorer**. If File Explorer continues to show an old icon, use **Deep Rebuild**.
+Select the affected executable or shortcut and run **Restart Explorer**. If File Explorer continues to display a stale icon, use **Deep Rebuild**.
 
-### Windows icon cache rebuild did not fix one application
+### Desktop or Start menu shortcuts show blank icons
 
-The application or shortcut may itself be supplying an incorrect icon. Recreate the shortcut, verify it points to the correct executable, or reinstall/update the affected app.
+A stale icon cache can affect shortcuts outside the taskbar too. Try **Restart Explorer**, followed by **Deep Rebuild** if the blank shortcut icons remain.
 
-For more detailed help, see [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md).
+For more scenarios, see **[Troubleshooting](docs/TROUBLESHOOTING.md)**.
 
 ---
 
@@ -247,7 +262,7 @@ For more detailed help, see [`docs/TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md)
 Depending on the repair mode, Windows Icon Refresher can:
 
 - Send Windows shell icon refresh notifications
-- Refresh Windows icon/file associations
+- Refresh Windows icon and file associations
 - Notify Windows that a selected application or shortcut changed
 - Restart `explorer.exe`
 - Remove current-user icon-cache database files
@@ -290,17 +305,29 @@ Administrator privileges are normally not required because Deep Rebuild targets 
 
 ## Frequently Asked Questions
 
-### How do I refresh the icon cache in Windows 11?
+### How do I fix blank taskbar icons in Windows 11?
 
-Use **Restart Explorer** for the recommended repair. If the icon cache appears corrupted or icons remain blank, use **Deep Rebuild** to remove the current-user cache files and let Windows recreate them.
+Open Windows Icon Refresher and run **Restart Explorer**. If the blank taskbar icon remains, select the affected application's executable or shortcut and run the repair again. Use **Deep Rebuild** for stubborn cache corruption.
 
-### How do I fix a blank taskbar icon in Windows 11?
+### How do I rebuild the icon cache in Windows 11?
 
-Open Windows Icon Refresher, choose **Restart Explorer**, optionally select the affected application's executable, and run the repair. If the icon remains blank, use **Deep Rebuild** and repin the application.
+Choose **Deep Rebuild**. Windows Icon Refresher stops Explorer, clears current-user icon-cache database files, starts Explorer again, and lets Windows rebuild the icon cache.
+
+### How do I refresh the Windows icon cache without restarting my PC?
+
+Try **Quick Refresh** first. If a full shell reload is needed, **Restart Explorer** restarts `explorer.exe` without requiring a full Windows reboot.
+
+### Why are my Windows 11 taskbar icons showing generic icons?
+
+Generic taskbar icons can appear when Windows has stale or corrupted icon-cache data, when a shortcut is damaged, or when an application is supplying an unexpected icon. Start with **Restart Explorer** and use **Deep Rebuild** if the issue persists.
 
 ### How do I fix a wrong taskbar icon after updating an app?
 
 Select the updated application's `.exe` or `.lnk`, run **Restart Explorer**, and repin the app if the old icon remains. Use **Deep Rebuild** for persistent stale cache entries.
+
+### Can it fix File Explorer showing the wrong app icon?
+
+Yes, if the problem is caused by stale Windows shell or icon-cache data. Target the affected executable or shortcut and run **Restart Explorer**, then use **Deep Rebuild** if necessary.
 
 ### Does Windows Icon Refresher delete my files?
 
@@ -308,11 +335,19 @@ It does not delete personal documents or modify application executables. Deep Re
 
 ### Does it need administrator rights?
 
-Normally no. The utility works with the current user's Windows icon cache and shell process.
+Normally no. The utility is designed around the current user's Windows icon cache and shell process.
 
 ### Does it work on Windows 10?
 
-Yes. Windows Icon Refresher is intended for both Windows 10 and Windows 11.
+Yes. Windows Icon Refresher is intended for both Windows 11 and Windows 10.
+
+---
+
+## Guides
+
+- **[Fix Blank Taskbar Icons in Windows 11](docs/FIX-BLANK-TASKBAR-ICONS-WINDOWS-11.md)**
+- **[Rebuild the Windows Icon Cache on Windows 11 and Windows 10](docs/REBUILD-WINDOWS-ICON-CACHE.md)**
+- **[Troubleshooting Windows Icon Refresher](docs/TROUBLESHOOTING.md)**
 
 ---
 
@@ -329,6 +364,8 @@ windows-icon-refresher/
 ├── CODE_OF_CONDUCT.md
 ├── LICENSE.md
 └── docs/
+    ├── FIX-BLANK-TASKBAR-ICONS-WINDOWS-11.md
+    ├── REBUILD-WINDOWS-ICON-CACHE.md
     └── TROUBLESHOOTING.md
 ```
 
@@ -418,13 +455,7 @@ Windows and File Explorer are trademarks of Microsoft Corporation.
 
 ---
 
-## Search Terms This Project Helps With
-
-Windows Icon Refresher is intended for people searching for solutions to problems such as **fix blank taskbar icon Windows 11**, **refresh Windows icon cache**, **rebuild icon cache Windows 10**, **fix wrong taskbar icon after app update**, **generic white icon Windows 11**, **File Explorer wrong app icon**, **stale Windows shortcut icon**, **restart Explorer to refresh icons**, and **Windows taskbar icon cache repair tool**.
-
----
-
 <p align="center">
   <strong>Windows Icon Refresher 1.0</strong><br>
-  A simple GUI for repairing stale Windows taskbar, shortcut, and File Explorer icons.
+  Fix blank taskbar icons, generic app icons, stale shortcuts, and corrupted Windows icon-cache problems from one simple GUI.
 </p>
